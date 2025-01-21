@@ -6,18 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <button class="alertButton">Button 1</button>
-    <button class="alertButton">Button 2</button>
+<button  id = "nam" class="alertButton">Button 2</button>
     <script>
-        // Sélectionner tous les boutons sur la page
-        const buttons = document.querySelectorAll('button');
-        
-        // Ajouter un événement 'click' à chaque bouton
-        buttons.forEach(button => {
-            button.addEventListener('click', function () {
-                alert(button.textContent); // Affiche le texte du bouton
-            });
-        });
+        let ser = document.getElementById("nam")
+        ser.addEventListener('click', function(){
+            ser.innerHTML="hello world ";
+        })
     </script>
     
 </body>

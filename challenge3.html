@@ -6,16 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="styleButton">Change Styles</button>
+    <button id="style" onclick="b()">Change Styles</button>
     
       <script>
-        
-        const button = document.getElementById('styleButton');
+        function b (){
+            document.getElementById("style").style.backgroundColor="blue";
+            document.getElementById("style").style.color="white";
 
-         button.addEventListener('click', function () {
-            button.style.backgroundColor = 'blue'; 
-            button.style.color = 'white'; 
-        });
+        }
+       
     </script>
 </body>
 </html>

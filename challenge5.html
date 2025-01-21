@@ -6,27 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <form id="form">
-        <input type="text" id="inputField" placeholder="Enter text">
-        <button type="submit">Submit</button>
-        <p id="error" style="color: red; display: none;">Field is required!</p>
-    </form>
-    <script>
-        const form = document.getElementById('form');
-        const inputField = document.getElementById('inputField');
-        const errorMessage = document.getElementById('errorMessage');
+    <label> Name </label>
+    <input id="name">
+        <button  onclick="afficher()"> Clique ici </button>
 
-        form.addEventListener('submit' , function(event){
-            if (inputField.value.trim()  === ''){
-                event.preventDefault();
-                errorMessage.style.display= 'block';
+        <script>
+            function afficher(){
+            let x =document.getElementById("name");
+           
+            if(x.value == ''){
+                alert("cette case doit remplir");
+             } 
+             x.value ='';
             }
-            else{
-                errorMessage.style.display='none';
-            }
-        });
-        
+            
+        </script>
 
-    </script>
 </body>
+
 </html>
